@@ -1,0 +1,223 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #aee2ed;
+  display: flex;
+  color: #fefcfd;
+  box-sizing: border-box;
+}
+
+.hero img {
+  width: 20vw;
+  height: 40vh;
+}
+
+.hero .perkenalan {
+  padding-top: 3em;
+}
+
+.hero .perkenalan h1 {
+  font-size: 3em;
+}
+
+.hero .perkenalan h1 strong {
+  color: #7690c9;
+}
+
+.hero .perkenalan h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #7690c9;
+  color: #fefcfd;
+  height: 3em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "none nav";
+  box-sizing: border-box;
+  align-items: center;
+}
+
+nav ul {
+  grid-area: nav;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fefcfd;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+/* Tentang Saya */
+.tentang-saya {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "judul judul"
+    "main sidebar";
+}
+.tentang-saya h2 a {
+  background-color: #7690c9;
+  text-decoration: none;
+  color: #fefcfd;
+  padding: 0.7em;
+  font-size: 500;
+}
+
+.tentang-saya .main {
+  grid-area: main;
+  box-sizing: border-box;
+}
+
+.tentang-saya .main .konten {
+  background-color: #f3f3f3;
+  padding: 2em;
+  margin: 3em;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+
+.tentang-saya .main .konten img {
+  float: left;
+  width: 10vw;
+  margin: 1em;
+}
+
+.tentang-saya .sidebar {
+  grid-area: sidebar;
+}
+
+.tentang-saya .sidebar video {
+  width: 100%;
+}
+
+/* Pengalaman Kerja */
+.pengalaman {
+  margin-top: 3em;
+}
+
+.pengalaman h2 a {
+  background-color: #7690c9;
+  text-decoration: none;
+  color: #fefcfd;
+  padding: 0.7em;
+  font-size: 500;
+}
+
+.pengalaman table {
+  margin: auto;
+  border: 1px solid #aee2ed;
+  width: 70%;
+}
+
+.pengalaman table tr td {
+  border: 1px solid #aee2ed;
+  text-align: center;
+}
+
+.pengalaman table tr td:nth-child(2),
+.pengalaman table tr td:nth-child(3) {
+  text-align: start;
+}
+
+.pengalaman table tr th {
+  background-color: #aee2ed;
+  color: #fefcfd;
+}
+
+/* Hubungi Saya */
+.hubungi {
+  margin-top: 3em;
+}
+
+.hubungi h2 a {
+  background-color: #7690c9;
+  text-decoration: none;
+  color: #fefcfd;
+  padding: 0.7em;
+  font-size: 500;
+}
+
+/* Form */
+.form {
+  margin: 2em;
+  background-color: #aee2ed;
+  width: 30%;
+  padding: 2em;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+form p {
+  padding: 5px 0 5px 0;
+  margin-top: 1em;
+}
+
+form [type="text"] {
+  width: 80%;
+  border: 1px solid #fefcfd;
+  cursor: pointer;
+  height: 3vh;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+form [for="sudah"] {
+  margin-right: 1em;
+}
+
+form [for="ini"],
+form [for="itu"],
+form [for="anu"] {
+  margin-right: 1em;
+}
+
+form [type="submit"] {
+  margin-top: 1em;
+  background-color: #7690c9;
+  border: none;
+  padding: 1em;
+  width: 90%;
+  color: #fefcfd;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #f3f3f3;
+  height: 3em;
+  color: #7690c9;
+  font-weight: 700;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
